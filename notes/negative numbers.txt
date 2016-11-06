@@ -1,0 +1,62 @@
+2's Complement
+---------------
+
+Represent Negative number -x using the positive number: 2^n-x
+
+000     0
+001     1
+010     2
+011     3
+100     -4      2^3-4 ==> 4
+101     -3      2^3-3 ==> 5
+110     -2      2^3-2 ==> 6
+111     -1      2^3-1 ==> 7
+
+Positive Numbers in the range:
+  0 ... 2^(n-1) - 1
+
+Negative Numbers in the range:
+  -1 ... -2^(n-1)
+
+Addition in 2's Complement (for Free)
+  -2    2^4-2 => 14     1110
+ +              +      +
+  -3    2^4-3 => 13     1101
+ -----          ----   ------
+  -5             27    11011    (note overflow)
+  -5             11     1011    2^4-5 => 11 where x=-5
+
+Computing -x
+---------------
+  Input: x
+  Output: -x (in 2s complement)
+
+If we solve this then we know how to subtract!
+  y-x = y + (-x)
+
+Idea: 2^n - x = 1 + (2^n - 1) - x
+
+Example:
+  Input:   4
+  Output: -4
+
+  1111      => (2^n - 1)
+ -
+  0100      => 4
+ ------
+  1011
+ +   1
+ ------
+  1100      2^4-4 => 12 => where x=4 so -4
+
+  negate 6
+
+    1111
+   -
+    0110
+   ------
+    1001
+   +
+       1
+    -----
+    1010    2^4-6 => 10 => where x=6 so -6

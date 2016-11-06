@@ -1,0 +1,17 @@
+Theorem
+
+AND, OR, and NOT operations
+
+AND and NOT operations
+
+Proof:
+  (x OR y) = NOT(NOT(x) AND NOT(y))
+
+NAND
+  (x NAND y) = NOT(x AND y)
+
+Any Boolean function can be represented using NAND
+
+Proof:
+  1) NOT(x) = (x NAND x)
+  2 (x AND y) = NOT(x NAND y)

@@ -1,0 +1,28 @@
+/*
+Chip name: Nand
+Inputs:    a, b
+Outputs:   out
+Function:  If  a=b=1 then out=0 else out=1
+Comment:   This gate is considered primitive and thus there is 
+            no need to implement it
+
+a b || Nand(a,b)
+----||-----------
+0 0 ||     1
+0 1 ||     1
+1 0 ||     1
+1 1 ||     0
+
+*/
+/**
+ * Nand gate:
+ * out = 0 if (a == 1 and b == 1)
+ *       1 otherwise
+ */
+CHIP Nand {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+}

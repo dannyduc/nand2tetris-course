@@ -1,0 +1,21 @@
+The Arithmetic Logic Unit
+----------------------------------------------------
+
+The ALU computes a
+function of the two inputs,
+and outputs the result
+
+f: one out of a family of
+  pre-defined arithmetic
+  and logical functions
+
+  * Arithmetic operations: integer addition,
+                           multiplication, division, ...
+  * logical operations: And, Or, Xor, ...
+
+  Which operations should the ALU perform?
+  a hardware / software tradeoff.
+
+  The Hack ALU
+----------------------------------------------------
+

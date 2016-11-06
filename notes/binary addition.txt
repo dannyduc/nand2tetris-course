@@ -1,0 +1,27 @@
+01111101
+00110110
+---------
+10110011
+
+128+32+16+2+1
+128+51
+179
+
+Overflow
+  ignore carry over bit
+
+Adder
+  Half Adder - adds two bits
+  Full Adder - ads three bits
+  Adder - adds two number
+
+Half Adder
+  sum
+  carry
+
+a b | sum carry
+----------------
+0 0 | 0   0
+0 1 | 1   0
+1 0 | 1   0
+1 1 | 0   1

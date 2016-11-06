@@ -1,0 +1,82 @@
+
+Boolean Values
+
+F  T
+N  Y
+0  1
+
+(x AND y)
+x^y
+
+x y AND
+0 0 0
+0 1 0
+1 0 0
+1 1 1
+
+(x OR y)
+xVy
+
+x y OR
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+
+NOT(x)
+
+x NOT
+0 1
+1 0
+
+Boolean Expressions
+
+NOT(0 OR (1 AND 1)) = NOT( 0 OR 1) = NOT(1) = 0
+
+Boolean Functions
+
+Formula
+f(x, y, z) = (x AND y) OR (NOT(x) AND z)
+
+Truth Table
+x y z f
+0 0 0 0
+0 0 1 1
+0 1 0 0
+0 1 1 1
+1 0 0 0
+1 0 1 0
+1 1 0 1
+1 1 1 1
+
+Commutative Laws
+* (x AND y) = (y AND x)
+* (x OR y) = (y OR x)
+
+Associative Laws
+* (x AND (y AND z)) = ((x AND y) AND z)
+* (x OR (y OR z)) = ((x OR Y) OR z)
+
+Distributive Laws
+* (x AND (y OR z)) = (x AND y) OR (x AND z)
+* (x OR (y AND z)) = (x OR y) AND (x OR z)
+
+De Morgan Laws
+NOT(x AND y) = NOT(x) OR NOT(y)
+NOT(x OR y) = NOT(x) AND NOT(y)
+
+Boolean Algebra
+
+NOT(NOT(x) AND NOT(x OR y)) =
+NOT(NOT(x) AND (NOT(x) AND NOT(y))) =   // De Morgan Law
+NOT((NOT(x) AND NOT(x)) AND NOT(y)) =   // Associative Law
+NOT(NOT(x) AND NOT(y)) =                // Idempotence
+NOT(NOT(x)) OR NOT(NOT(y)) =            // De Morgan Law
+x OR y                                  // Double Negation
+
+x y
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+= x OR y
